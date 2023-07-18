@@ -8,8 +8,8 @@ class HashTable {
 
     hashFunction = key => key.charCodeAt() % this.size;
     put = (key, value) => this.table[this.hashFunction(key)] = value;
-    get = (key) => this.table[this.hashFunction(key)];
-    remove = (key) => delete this.table[this.hashFunction(key)];     
+    get = key => this.table[this.hashFunction(key)];
+    remove = key => delete this.table[this.hashFunction(key)];     
 }
 
 const hashTable = new HashTable(10);

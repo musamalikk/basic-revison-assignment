@@ -30,6 +30,5 @@ class XmlToJsonAdapter {
 }
 
 const xmlService = new XmlService()
-const xmlService2 = new XmlService()
 const xmlToJsonAdapter = new XmlToJsonAdapter(xmlService)
 xmlToJsonAdapter.readJsonData()                  
